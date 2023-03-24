@@ -46,4 +46,5 @@ debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
 
  11_ si yo me quiero mover de una rama a la otra debo escribirel comando git checkout "nombre de la rama "
 
- 
+ 12_ CUANDO YO CREO UNA RAMA LA RAMA QUE CREO VA A TENER TODO LO QUE LA OTRA RAMA terminal
+ HASTA ESE MOMENTO.
