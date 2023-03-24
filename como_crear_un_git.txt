@@ -38,3 +38,5 @@ la A para cuando use add
 8 _ Una vez que quiero q los cambios realizados pasen a ser definitivos
 debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
 
+ 9_ si yo quiero saber cuantas versiones tengo , es decir , cuantas ramas hize
+ puedo usar el comando git log
