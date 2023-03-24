@@ -43,4 +43,7 @@ debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
 
  10_ si yo quiero crear una rama nueva para poder trabajar sin modificar la version actual
  puedo usar el comando git branch "aca va el nombre de la rama sin comillas"
+
+ 11_ si yo me quiero mover de una rama a la otra debo escribirel comando git checkout "nombre de la rama "
+
  
