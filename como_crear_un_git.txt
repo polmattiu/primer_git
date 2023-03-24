@@ -39,4 +39,8 @@ la A para cuando use add
 debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
 
  9_ si yo quiero saber cuantas versiones tengo , es decir , cuantas ramas hize
- puedo usar el comando git log
+ puedo usar el comando git log.
+
+ 10_ si yo quiero crear una rama nueva para poder trabajar sin modificar la version actual
+ puedo usar el comando git branch "aca va el nombre de la rama sin comillas"
+ 
