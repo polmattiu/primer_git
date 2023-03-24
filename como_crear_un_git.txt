@@ -48,3 +48,10 @@ debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
 
  12_ CUANDO YO CREO UNA RAMA LA RAMA QUE CREO VA A TENER TODO LO QUE LA OTRA RAMA terminal
  HASTA ESE MOMENTO.
+
+ 13 - para borrar una rama lo que puedo hacer es usar el comando
+ git branch -D "nombre de la rama"
+
+ y con el git branch puedo verificar si lo q hize es correcto
+
+ 
