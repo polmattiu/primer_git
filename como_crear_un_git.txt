@@ -54,4 +54,7 @@ debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
 
  y con el git branch puedo verificar si lo q hize es correcto
 
+ 13_ Si la rama auxiliar que yo estoy usando funciona bien y los cambios que hize los 
+ quiero llevar a la rama principal uso el comando git marge "nombre de la rama auxilair"
+
  
