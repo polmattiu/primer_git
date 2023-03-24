@@ -1,0 +1,40 @@
+1_ Debo estar parado dentro de las carpetas
+que quiero que me haga las versiones
+en este caso estoy dentro de la carpeta proyecto django
+
+2_ Despues debo escribir en la terminal git initi
+y le doy enter, te tiene q tirar un mensaje que comenzaste un repoitrorio de git
+
+3_En la terminal BASH me va a aparecer despues de la ubicacion (MASTER)
+ESO me indica que estoy trabajando con git.
+
+4_ con el comando git status , yo puedo ver en que rama de git estoy ,
+es decir en la principal o no.
+ejemplo
+git status
+On branch master                                                       /PYTHON/ProyectoDjango/.g
+
+No commits yet
+                                                                       ngo (master)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        como_crear_un_git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+4_ cuando inicialisamos un proyecto ed git la primera rama es las MASTER .
+despues tenemos distintas ramas que nos permiten hacer copias y trabajar sobre esas
+copias sin modificar la original.
+
+5_ para yo poder salir de la rama principal primero debo agregar el archivo 
+para eso voy a usar el comando git add .  o puedo usar git add "el nombre del archivo"
+
+6_ Una vez q hago eso deberia aparecer una A al lado del archivo 
+
+7_ ME puede aparecer tres letras la U = para cosas nuevas
+la M = para cosas modificadas 
+la A para cuando use add
+
+8 _ Una vez que quiero q los cambios realizados pasen a ser definitivos
+debo usar el comando git commit -M "Aca le pongo el msj que yo quiera"
+
