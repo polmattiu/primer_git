@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block title_head %}
+<title>Gasto</title>
+{% endblock title_head %}
+
+
+{% block h1_header %}
+<h1>Gasto: {{gasto}}</h1>
+{% endblock h1_header %}
+
+{% block contenido %}
+
+<ul>
+    <li>Tipo: {{gasto.tipo}}</li>
+    <li>Articulo: {{gasto.articulo}}</li>
+    <li>Descripcion: {{gasto.descripcion | safe}}</li>
+    <li>Stock: {{gasto.stock}}</li>
+    <li>Fecha de carga: {{gasto.fecha_de_carga}}</li>
+    <li>Precio: {{gasto.precio}}</li>
+    <li>Imagen: <img src={{gasto.imagen}}></li>
+    
+    
+</ul>
+<a href={% url 'inicio:modificar_gasto' gasto.id %}>Modificar</a> . <a href={% url 'inicio:eliminar_gasto' gasto.id %}>Eliminar</a>
+
+{% endblock contenido %}

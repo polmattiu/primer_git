@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title_head %}
+<title> Gasto</title>
+{% endblock title_head %}
+
+
+{% block h1_header %}
+<h1>Introducir Gasto</h1>
+{% endblock h1_header %}
+
+{% block contenido %}
+
+<form action={% url 'inicio:crear_gasto' %} method="post" enctype='multipart/form-data'>
+    {% csrf_token %}
+    <table>
+        {{form.media}}
+        {{form}}
+    </table>
+    <button>Crear</button>
+</form>
+
+{% endblock contenido %}

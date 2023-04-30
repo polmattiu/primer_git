@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title_head %}
+    <title>Listado de Gastos</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+    <h1>Listado de Gastos</h1>
+{% endblock h1_header %}
+
+{% block contenido %}
+    <a href="{% url 'inicio:crear_gasto' %}">Crear Nuevo Gasto</a>
+
+    {% if object_list %}
+        <ul>
+            {% for gasto in object_list %}
+                <li>
+                    <a href="{% url 'inicio:detalle_gasto' gasto.id %}">{{ gasto }}</a>
+                    {% if gasto.imagen %}
+                        <img src="{{ gasto.imagen.url }}" alt="Imagen del gasto">
+                    {% endif %}
+                </li>
+
+                <a href="{% url 'inicio:modificar_gasto' gasto.id %}">Modificar</a> .
+                <a href="{% url 'inicio:eliminar_gasto' gasto.id %}">Eliminar</a>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>No se encontraron datos relacionados.</h3>
+    {% endif %}
+{% endblock contenido %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} {% extends 'base.html' %}
+
+
+{% block title_head %}
+<title>Gastos</title>
+{% endblock title_head %}
+
+
+{% block h1_header %}
+<h1>Listado de Gastos</h1>
+{% endblock h1_header %}
+
+{% block contenido %}
+
+<a href={% url 'inicio:crear_gasto' %}>Crear Nueva Gasto</a>
+
+{% if object_list %}
+<ul>
+    {% for gasto in object_list %}
+    <li><a href={% url 'inicio:detalle_gasto' gasto.id %}>{{gasto}}</a></li>
+
+    <a href={% url 'inicio:modificar_gasto' gasto.id %}>Modificar</a> . <a href={% url 'inicio:eliminar_gasto' gasto.id %}>Eliminar</a>
+    {% endfor %}
+</ul>
+{% else %}
+<h3>No se encontraron datos relacionados.</h3>
+{% endif %}
+
+{% endblock contenido %} {% endcomment %}
